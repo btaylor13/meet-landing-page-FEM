@@ -10,47 +10,64 @@
       sizes="32x32"
       href="./assets/favicon-32x32.png"
     />
+    <!--Google Font Link - Red Hat Display Font-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;900&display=swap"
+      rel="stylesheet"
+    />
 
-    <title>Frontend Mentor | Meet landing page</title>
+    <!--Custom StyleSheet-->
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Meet landing page | Frontend Mentor</title>
   </head>
   <body>
     <main>
       <!--Header with Logo-->
-      <header class="header-container">
-        <img src="assets/logo.svg" alt="logo" class="logo" />
-      </header>
+      <div class="hero-container">
+        <header class="header-container">
+          <img src="assets/logo.svg" alt="logo" class="logo" />
+        </header>
 
-      <!--Hero Section-->
-      <section class="hero-section">
-        <div class="hero-left">
-          <img
-            src="assets/desktop/image-hero-left.png"
-            alt="user profile photos"
-            class="hero-left-img"
-          />
-        </div>
-        <h1>Group Chat for Everyone</h1>
-        <p>
-          Meet makes it easy to connect with others face-to-face virtually and
-          collaborate across any device.
-        </p>
-        <div class="hero-right">
-          <img
-            src="assets/desktop/image-hero-right.png"
-            alt="user profile photos"
-            class="hero-right-img"
-          />
-        </div>
-        <div class="hero-section-buttons">
-          <button class="download hero-btn btn">
-            Download <span class="hero-version-num">v1.3</span>
-          </button>
-          <button class="learn-more hero-btn btn">What is it?</button>
-        </div>
-      </section>
+        <!--Hero Section-->
+        <section class="hero-section">
+          <div class="hero-left">
+            <img
+              src="assets/desktop/image-hero-left.png"
+              alt="user profile photos"
+              class="hero-left-img hero-img"
+            />
+          </div>
+          <div class="hero-text-content">
+            <h1 class="hero-heading">Group Chat for Everyone</h1>
+            <p class="hero-description">
+              Meet makes it easy to connect with others face-to-face virtually
+              and collaborate across any device.
+            </p>
+            <div class="hero-section-buttons">
+              <button class="hero-download-btn hero-btn btn">
+                Download <span class="hero-version-num">v1.3</span>
+              </button>
+              <button class="hero-learn-more-btn hero-btn btn">
+                What is it?
+              </button>
+            </div>
+          </div>
+
+          <div class="hero-right">
+            <img
+              src="assets/desktop/image-hero-right.png"
+              alt="user profile photos"
+              class="hero-right-img hero-img"
+            />
+          </div>
+        </section>
+        <div class="transition-shape">\ 01</div>
+      </div>
       <!--Info Section-->
       <section class="info-section">
-        \ 01
         <div class="info-gallery">
           <img
             src="assets/desktop/image-woman-in-videocall.jpg"
@@ -73,26 +90,27 @@
             class="gallery-img"
           />
         </div>
-
-        <h2 class="info-heading">
-          <span class="emphasis-heading-text">Built for modern use</span>
-          Smarter meetings, all in one place
-        </h2>
-        <p class="info-description">
-          Send messages, share files, show your screen, and record your meetings
-          — all in one workspace. Control who can join with invite-only team
-          access, data encryption, and data export.
-        </p>
+        <div class="info-text-content">
+          <h2 class="info-heading">
+            <span class="overline-heading-text">Built for modern use</span>
+            Smarter meetings, all in one place
+          </h2>
+          <p class="info-description">
+            Send messages, share files, show your screen, and record your
+            meetings — all in one workspace. Control who can join with
+            invite-only team access, data encryption, and data export.
+          </p>
+        </div>
+        <div class="transition-shape transition-cta">02</div>
       </section>
       <!--Call to Action Section-->
       <section class="cta-section">
-        02
         <h2 class="cta-heading">Experience more together</h2>
         <p class="cta-description">
           Stay connected with reliable HD meetings and unlimited one-on-one and
           group video sessions.
         </p>
-        <button class="cta-download cta-btn btn">
+        <button class="cta-btn btn">
           Download <span class="cta-version-num">v1.3</span>
         </button>
       </section>

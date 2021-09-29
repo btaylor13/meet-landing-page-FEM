@@ -1,0 +1,179 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+  /* 1rem = 10px, 10px/16px = 62.5% */
+}
+
+body {
+  font-family: "Red Hat Display", sans-serif;
+}
+
+.hero-container {
+  height: 100vh;
+  width: 100vw;
+}
+
+.header-container {
+  display: flex;
+  justify-content: center;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+/* HERO SECTION */
+
+.hero-section {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.hero-heading {
+  font-size: 6.4rem;
+  padding-bottom: 3.5rem;
+  line-height: 6.4rem;
+}
+
+.hero-description {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #87879d;
+  line-height: 2.6rem;
+  padding-bottom: 3rem;
+}
+
+.hero-text-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hero-img {
+  flex: 0 20%;
+}
+
+.hero-left-img {
+  margin-left: -3.5rem;
+}
+
+.hero-right-img {
+  margin-right: -3.5rem;
+}
+
+.btn {
+  font-family: "Red Hat Display", sans-serif;
+  font-weight: 900;
+  font-size: 1.6rem;
+  color: #fafafa;
+  border: none;
+  border-radius: 5rem;
+  padding: 2.3rem 3.5rem;
+}
+
+.hero-download-btn {
+  background-color: #4d96a9;
+  margin: 0.9rem;
+}
+.hero-version-num {
+  color: #8fe3f9;
+}
+
+.hero-learn-more-btn {
+  background-color: #855fb1;
+  margin: 0.9rem;
+}
+
+/* GALLERY section */
+.info-gallery {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  padding-bottom: 6rem;
+}
+
+.gallery-img {
+  /* width: 100%; */
+  height: 20rem;
+  width: 20rem;
+  border-radius: 1rem;
+}
+
+/* INFO section */
+
+.info-text-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding-bottom: 13rem;
+}
+
+.info-heading {
+  font-size: 4rem;
+  line-height: 4.4rem;
+}
+
+.overline-heading-text {
+  font-size: 1.6rem;
+  line-height: 2.6rem;
+  text-transform: uppercase;
+  letter-spacing: 0.4rem;
+  display: block;
+  color: #4d96a9;
+}
+
+.info-description {
+  font-size: 1.8rem;
+  font-weight: 500;
+  color: #87879d;
+  line-height: 2.6rem;
+}
+
+/* CTA SECTION */
+
+.cta-section {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-image: linear-gradient(
+      rgba(77, 150, 168, 80%),
+      rgba(77, 150, 168, 80%)
+    ),
+    url(assets/desktop/image-footer.jpg);
+  height: 20rem;
+}
+
+.cta-heading {
+  color: #fafafa;
+  font-size: 4rem;
+  font-weight: 900;
+  flex: 0 0 20%;
+}
+
+.cta-description {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  color: #fafafa;
+  flex: 0 0 25%;
+}
+
+.cta-btn {
+  background-color: #855fb1;
+}
+
+.cta-version-num {
+  color: #d9b8ff;
+}
