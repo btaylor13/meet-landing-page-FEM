@@ -1,0 +1,22 @@
+{
+  "name": "meet-landing-page",
+  "version": "1.0.0",
+  "description": "This is a solution to the [Meet landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "node-sass main.scss style.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/btaylor13/meet-landing-page-FEM.git"
+  },
+  "author": "Bridgett",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/btaylor13/meet-landing-page-FEM/issues"
+  },
+  "homepage": "https://github.com/btaylor13/meet-landing-page-FEM#readme",
+  "devDependencies": {
+    "node-sass": "^6.0.1"
+  }
+}
