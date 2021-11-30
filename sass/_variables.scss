@@ -1,0 +1,62 @@
+// COLORS
+$color-teal-dark: #4d96a9;
+$color-teal-light: #8fe3f9;
+$color-btnhover-teal: #71c0d4;
+$color-purple-dark: #855fb1;
+$color-purple-light: #d9b8ff;
+$color-btnhover-purple: #b18bdd;
+$color-text-dark: #28283d;
+$color-text-light: #87879d;
+$color-text-light-gray: #fafafa;
+
+// HEADINGS
+.heading-1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 900;
+}
+
+.heading-2 {
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+  font-weight: 900;
+}
+
+.overline {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.body-text {
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  font-weight: 500;
+}
+
+// TABLET MEDIA QUERIES
+@media only screen and (max-width: 45rem) {
+  .heading-1 {
+    font-size: 3rem;
+    line-height: 3rem;
+  }
+
+  .body-text {
+    font-size: 1rem;
+  }
+}
+
+// MOBILE MEDIA QUERIES
+@media only screen and (max-width: 45rem) {
+  .heading-1 {
+    font-size: 2.5rem;
+    line-height: 2.75rem;
+  }
+
+  .heading-2 {
+    font-size: 2rem;
+    line-height: 2.25rem;
+  }
+}

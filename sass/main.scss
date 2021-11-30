@@ -1,29 +1,5 @@
-$color-teal-dark: #4d96a9;
-$color-teal-light: #8fe3f9;
-$color-btnhover-teal: #71c0d4;
-$color-purple-dark: #855fb1;
-$color-purple-light: #d9b8ff;
-$color-btnhover-purple: #b18bdd;
-$color-text-dark: #28283d;
-$color-text-light: #87879d;
-$color-text-light-gray: #fafafa;
-
-* {
-  margin: 0;
-  padding: 0;
-}
-
-*,
-*::after,
-*::before {
-  box-sizing: inherit;
-}
-
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-  /* 1rem = 10px, 10px/16px = 62.5% */
-}
+@import "base";
+@import "variables";
 
 body {
   font-family: "Red Hat Display", sans-serif;
@@ -35,6 +11,7 @@ body {
   height: 500px;
   margin: 0 auto;
 }
+
 // end of components
 
 .logo {
@@ -63,18 +40,13 @@ body {
 }
 
 .hero-heading {
-  font-size: 6.4rem;
   padding-bottom: 3.5rem;
-  line-height: 6.4rem;
   width: 60%;
   color: $color-text-dark;
 }
 
 .hero-description {
-  font-size: 1.8rem;
-  font-weight: 500;
   color: #87879d;
-  line-height: 2.6rem;
   padding-bottom: 3rem;
   width: 74.5%;
 }
@@ -147,16 +119,6 @@ body {
     justify-content: center;
   }
 
-  .hero-heading {
-    font-size: 4rem;
-    line-height: 4.3rem;
-  }
-
-  .hero-description {
-    font-size: 1.5rem;
-    line-height: 2rem;
-  }
-
   .hero-left-img {
     grid-area: imgleft;
     margin-top: 0;
@@ -213,20 +175,13 @@ body {
 }
 
 .overline-heading-text {
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-  text-transform: uppercase;
-  letter-spacing: 0.4rem;
   display: block;
   color: $color-teal-dark;
   margin-bottom: 2rem;
 }
 
 .info-description {
-  font-size: 1.8rem;
-  font-weight: 500;
   color: #87879d;
-  line-height: 2.6rem;
   width: 90%;
 }
 
@@ -245,14 +200,11 @@ body {
 
 .cta-heading {
   color: #fafafa;
-  font-size: 4rem;
-  font-weight: 900;
+
   flex: 0 0 20%;
 }
 
 .cta-description {
-  font-size: 1.8rem;
-  line-height: 2.6rem;
   color: #fafafa;
 }
 
@@ -299,14 +251,10 @@ body {
   }
 
   .cta-heading {
-    font-size: 3rem;
-    font-weight: 900;
     margin: 5rem 0 2rem 0;
   }
 
   .cta-description {
-    font-size: 1.5rem;
-    line-height: 2.2rem;
     margin-bottom: 2rem;
     width: 80%;
   }

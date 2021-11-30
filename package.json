@@ -4,7 +4,7 @@
   "description": "This is a solution to the [Meet landing page challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/meet-landing-page-rbTDS6OUR). Frontend Mentor challenges help you improve your coding skills by building realistic projects.",
   "main": "index.js",
   "scripts": {
-    "compile:sass": "node-sass main.scss style.css -w"
+    "compile:sass": "node-sass sass/main.scss style.css -w"
   },
   "repository": {
     "type": "git",

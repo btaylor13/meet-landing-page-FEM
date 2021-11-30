@@ -1,0 +1,21 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+button {
+  font-family: inherit;
+}
+
+// html {
+//   //   box-sizing: border-box;
+//   //   looking back on this months later, i'm not a fan of changing the font size percentages
+//   //   font-size: 62.5%;
+//   /* 1rem = 10px, 10px/16px = 62.5% */
+// }

@@ -5,12 +5,47 @@
 *,
 *::after,
 *::before {
-  box-sizing: inherit; }
+  box-sizing: border-box; }
 
-html {
-  box-sizing: border-box;
-  font-size: 62.5%;
-  /* 1rem = 10px, 10px/16px = 62.5% */ }
+button {
+  font-family: inherit; }
+
+.heading-1 {
+  font-size: 4rem;
+  line-height: 4rem;
+  font-weight: 900; }
+
+.heading-2 {
+  font-size: 2.5rem;
+  line-height: 2.75rem;
+  font-weight: 900; }
+
+.overline {
+  font-size: 1rem;
+  line-height: 1.625rem;
+  font-weight: 900;
+  letter-spacing: 4px;
+  text-transform: uppercase; }
+
+.body-text {
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  font-weight: 500; }
+
+@media only screen and (max-width: 45rem) {
+  .heading-1 {
+    font-size: 3rem;
+    line-height: 3rem; }
+  .body-text {
+    font-size: 1rem; } }
+
+@media only screen and (max-width: 45rem) {
+  .heading-1 {
+    font-size: 2.5rem;
+    line-height: 2.75rem; }
+  .heading-2 {
+    font-size: 2rem;
+    line-height: 2.25rem; } }
 
 body {
   font-family: "Red Hat Display", sans-serif; }
@@ -41,17 +76,12 @@ body {
   margin-top: 7rem; }
 
 .hero-heading {
-  font-size: 6.4rem;
   padding-bottom: 3.5rem;
-  line-height: 6.4rem;
   width: 60%;
   color: #28283d; }
 
 .hero-description {
-  font-size: 1.8rem;
-  font-weight: 500;
   color: #87879d;
-  line-height: 2.6rem;
   padding-bottom: 3rem;
   width: 74.5%; }
 
@@ -109,12 +139,6 @@ body {
     grid-template-areas: "imgleft imgright" "content content";
     align-content: center;
     justify-content: center; }
-  .hero-heading {
-    font-size: 4rem;
-    line-height: 4.3rem; }
-  .hero-description {
-    font-size: 1.5rem;
-    line-height: 2rem; }
   .hero-left-img {
     grid-area: imgleft;
     margin-top: 0; }
@@ -160,19 +184,12 @@ body {
   margin-bottom: 2rem; }
 
 .overline-heading-text {
-  font-size: 1.6rem;
-  line-height: 2.6rem;
-  text-transform: uppercase;
-  letter-spacing: 0.4rem;
   display: block;
   color: #4d96a9;
   margin-bottom: 2rem; }
 
 .info-description {
-  font-size: 1.8rem;
-  font-weight: 500;
   color: #87879d;
-  line-height: 2.6rem;
   width: 90%; }
 
 /* CTA SECTION */
@@ -180,17 +197,13 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-image: linear-gradient(#4d96a9, #4d96a9), url(assets/desktop/image-footer.jpg); }
+  background-image: linear-gradient(#4d96a9, #4d96a9), url("https://btaylor13.github.io/meet-landing-page-FEM/assets/desktop/image-footer.jpg"); }
 
 .cta-heading {
   color: #fafafa;
-  font-size: 4rem;
-  font-weight: 900;
   flex: 0 0 20%; }
 
 .cta-description {
-  font-size: 1.8rem;
-  line-height: 2.6rem;
   color: #fafafa; }
 
 .cta-btn {
@@ -228,12 +241,8 @@ body {
     text-align: center;
     padding-block: 2rem; }
   .cta-heading {
-    font-size: 3rem;
-    font-weight: 900;
     margin: 5rem 0 2rem 0; }
   .cta-description {
-    font-size: 1.5rem;
-    line-height: 2.2rem;
     margin-bottom: 2rem;
     width: 80%; }
   .cta-btn {
