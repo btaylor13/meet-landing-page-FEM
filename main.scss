@@ -90,6 +90,7 @@ body {
   width: 100%;
   height: auto;
   min-width: 200px;
+  max-width: 400px;
 }
 
 .hero-left-img {
@@ -239,7 +240,7 @@ body {
       rgba($color-teal-dark, 80%),
       rgba($color-teal-dark, 80%)
     ),
-    url(assets/desktop/image-footer.jpg);
+    url("https://btaylor13.github.io/meet-landing-page-FEM/assets/desktop/image-footer.jpg");
 }
 
 .cta-heading {
