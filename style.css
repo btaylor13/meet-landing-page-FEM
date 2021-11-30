@@ -11,8 +11,8 @@ button {
   font-family: inherit; }
 
 .heading-1 {
-  font-size: 4rem;
-  line-height: 4rem;
+  font-size: 3.8rem;
+  line-height: 3.8rem;
   font-weight: 900; }
 
 .heading-2 {
@@ -32,7 +32,7 @@ button {
   line-height: 1.625rem;
   font-weight: 500; }
 
-@media only screen and (max-width: 45rem) {
+@media only screen and (max-width: 47rem) {
   .heading-1 {
     font-size: 3rem;
     line-height: 3rem; }
@@ -50,17 +50,19 @@ button {
 body {
   font-family: "Red Hat Display", sans-serif; }
 
+.container {
+  padding-inline: 2rem;
+  margin-inline: auto;
+  max-width: 87rem; }
+
 .vertical-line {
   border-left: 5px solid #87879d;
   height: 500px;
   margin: 0 auto; }
 
 .logo {
-  margin: 0 auto; }
-
-.hero-container {
-  height: 100vh;
-  width: 100vw; }
+  margin: 0 auto;
+  margin-top: 2rem; }
 
 .header-container {
   display: grid;
@@ -73,16 +75,17 @@ body {
   text-align: center;
   align-items: center;
   position: relative;
-  margin-top: 7rem; }
+  margin-top: 7rem;
+  margin-bottom: 7rem; }
 
 .hero-heading {
-  padding-bottom: 3.5rem;
-  width: 60%;
+  margin-bottom: 1.5rem;
+  width: 100%;
   color: #28283d; }
 
 .hero-description {
   color: #87879d;
-  padding-bottom: 3rem;
+  margin-bottom: 1.5rem;
   width: 74.5%; }
 
 .hero-text-content {
@@ -107,11 +110,11 @@ body {
 .btn {
   font-family: "Red Hat Display", sans-serif;
   font-weight: 900;
-  font-size: 1.6rem;
+  font-size: 1rem;
   color: #fafafa;
   border: none;
   border-radius: 5rem;
-  padding: 2.3rem 3.5rem;
+  padding: 1.4375rem 2.1875rem;
   cursor: pointer; }
 
 .hero-download-btn {
@@ -133,7 +136,7 @@ body {
   background-color: #b18bdd;
   transition: all 0.3s ease; }
 
-@media only screen and (max-width: 34rem) {
+@media only screen and (max-width: 45rem) {
   .hero-section {
     grid-template-columns: repeat(auto-fit, 1fr);
     grid-template-areas: "imgleft imgright" "content content";
@@ -173,13 +176,11 @@ body {
   justify-content: center;
   align-items: center;
   text-align: center;
-  padding-bottom: 13rem;
+  margin-bottom: 5rem;
   margin: 0 auto;
   width: 70%; }
 
 .info-heading {
-  font-size: 4rem;
-  line-height: 4.4rem;
   color: #28283d;
   margin-bottom: 2rem; }
 
@@ -197,14 +198,19 @@ body {
   display: flex;
   justify-content: space-evenly;
   align-items: center;
-  background-image: linear-gradient(#4d96a9, #4d96a9), url("https://btaylor13.github.io/meet-landing-page-FEM/assets/desktop/image-footer.jpg"); }
+  background-image: linear-gradient(rgba(77, 150, 169, 0.85), rgba(77, 150, 169, 0.85)), url(assets/desktop/image-footer.jpg);
+  padding-block: 4rem;
+  background-repeat: no-repeat;
+  background-position: center; }
 
 .cta-heading {
   color: #fafafa;
   flex: 0 0 20%; }
 
 .cta-description {
-  color: #fafafa; }
+  color: #fafafa;
+  text-align: start;
+  width: 50%; }
 
 .cta-btn {
   background-color: #855fb1; }
@@ -233,17 +239,26 @@ body {
   margin: 0 auto;
   z-index: 300; }
 
-@media only screen and (max-width: 38rem) {
+@media only screen and (max-width: 46rem) {
   .cta-section {
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding-block: 2rem; }
+    padding-block: 4rem;
+    background: linear-gradient(rgba(77, 150, 169, 0.8), rgba(77, 150, 169, 0.8)), url(assets/tablet/image-footer.jpg);
+    background-repeat: no-repeat; }
   .cta-heading {
     margin: 5rem 0 2rem 0; }
   .cta-description {
     margin-bottom: 2rem;
-    width: 80%; }
+    width: 70%;
+    text-align: center; }
   .cta-btn {
     background-color: #855fb1; } }
+
+@media only screen and (max-width: 35rem) {
+  .cta-section {
+    background: linear-gradient(rgba(77, 150, 169, 0.8), rgba(77, 150, 169, 0.8)), url(assets/mobile/image-footer.jpg);
+    background-position: top;
+    background-repeat: no-repeat; } }
