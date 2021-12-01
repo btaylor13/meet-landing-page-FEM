@@ -55,10 +55,35 @@ body {
   margin-inline: auto;
   max-width: 87rem; }
 
+.transition-section {
+  display: flex;
+  flex-direction: column; }
+  .transition-section--1 {
+    margin-bottom: 3.5rem; }
+  .transition-section--2 {
+    margin-bottom: -1.6rem; }
+
 .vertical-line {
-  border-left: 5px solid #87879d;
-  height: 500px;
+  border-left: 1px solid rgba(135, 135, 157, 0.4);
+  height: 5.25rem;
   margin: 0 auto; }
+
+.transition-shape {
+  border: solid rgba(135, 135, 157, 0.4) 0.8px;
+  border-radius: 50%;
+  background-color: white;
+  color: #87879d;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  height: 3.125rem;
+  width: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  margin: 0 auto;
+  z-index: 300; }
 
 .logo {
   margin: 0 auto;
@@ -76,7 +101,7 @@ body {
   align-items: center;
   position: relative;
   margin-top: 7rem;
-  margin-bottom: 7rem; }
+  margin-bottom: 5rem; }
 
 .hero-heading {
   margin-bottom: 1.5rem;
@@ -114,7 +139,7 @@ body {
   color: #fafafa;
   border: none;
   border-radius: 5rem;
-  padding: 1.4375rem 2.1875rem;
+  padding: 1em 2em;
   cursor: pointer; }
 
 .hero-download-btn {
@@ -141,7 +166,11 @@ body {
     grid-template-columns: repeat(auto-fit, 1fr);
     grid-template-areas: "imgleft imgright" "content content";
     align-content: center;
-    justify-content: center; }
+    justify-content: center;
+    margin-top: 3rem; }
+  .hero-heading {
+    margin-top: 0;
+    margin-bottom: 1.3rem; }
   .hero-left-img {
     grid-area: imgleft;
     margin-top: 0; }
@@ -151,7 +180,8 @@ body {
     margin-top: 4rem;
     grid-area: content;
     order: 3;
-    justify-self: center; } }
+    justify-self: center;
+    width: 77%; } }
 
 /* GALLERY section */
 .info-gallery {
@@ -221,23 +251,6 @@ body {
 .cta-btn:hover {
   background-color: #b18bdd;
   transition: all 0.5s ease; }
-
-.transition-shape {
-  border: solid #87879d 0.8px;
-  border-radius: 50%;
-  background-color: white;
-  color: #87879d;
-  font-weight: bold;
-  font-size: 1.3rem;
-  height: 5rem;
-  width: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  align-self: center;
-  margin: 0 auto;
-  z-index: 300; }
 
 @media only screen and (max-width: 46rem) {
   .cta-section {

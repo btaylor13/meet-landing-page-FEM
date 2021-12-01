@@ -11,11 +11,48 @@ body {
   max-width: 87rem;
 }
 
-// components
+// circle components
+.transition-section {
+  display: flex;
+  flex-direction: column;
+
+  &--1 {
+    margin-bottom: 3.5rem;
+  }
+
+  &--2 {
+    margin-bottom: -1.6rem;
+  }
+}
+
 .vertical-line {
-  border-left: 5px solid $color-text-light;
-  height: 500px;
+  border-left: 1px solid rgba($color-text-light, 0.4);
+  height: 5.25rem;
   margin: 0 auto;
+
+  &--2 {
+  }
+
+  &--1 {
+  }
+}
+
+.transition-shape {
+  border: solid rgba($color-text-light, 0.4) 0.8px;
+  border-radius: 50%;
+  background-color: white;
+  color: $color-text-light;
+  font-weight: bold;
+  font-size: 0.8125rem;
+  height: 3.125rem;
+  width: 3.125rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  align-self: center;
+  margin: 0 auto;
+  z-index: 300;
 }
 
 // end of components
@@ -42,7 +79,7 @@ body {
   align-items: center;
   position: relative;
   margin-top: 7rem;
-  margin-bottom: 7rem;
+  margin-bottom: 5rem;
 }
 
 .hero-heading {
@@ -87,7 +124,7 @@ body {
   color: #fafafa;
   border: none;
   border-radius: 5rem;
-  padding: 1.4375rem 2.1875rem;
+  padding: 1em 2em;
   cursor: pointer;
 }
 
@@ -123,6 +160,12 @@ body {
       "content content";
     align-content: center;
     justify-content: center;
+    margin-top: 3rem;
+  }
+
+  .hero-heading {
+    margin-top: 0;
+    margin-bottom: 1.3rem;
   }
 
   .hero-left-img {
@@ -139,6 +182,7 @@ body {
     grid-area: content;
     order: 3;
     justify-self: center;
+    width: 77%;
   }
 }
 
@@ -227,24 +271,6 @@ body {
 .cta-btn:hover {
   background-color: $color-btnhover-purple;
   transition: all 0.5s ease;
-}
-
-.transition-shape {
-  border: solid $color-text-light 0.8px;
-  border-radius: 50%;
-  background-color: white;
-  color: $color-text-light;
-  font-weight: bold;
-  font-size: 1.3rem;
-  height: 5rem;
-  width: 5rem;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
-  align-self: center;
-  margin: 0 auto;
-  z-index: 300;
 }
 
 // MEDIA QUERIES FOR CTA SECTION
